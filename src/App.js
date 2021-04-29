@@ -1,21 +1,24 @@
 import './App.css';
 import React from "react";
-import { Container  } from "@material-ui/core";
+import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 
 
 
 function App() {
   return (
-    <Container >
-        <Grid item xs={12} sm={12} md={4} lg={3}>
-            hello
-        </Grid>
-        <Grid item xs>
-            world
-        </Grid>
-
-    </Container>
+      <React.Fragment>
+            <Container>
+                <Grid container>
+                    <Grid item lg={3} md={4} sm={12} xs={12}>
+                        jkkks
+                    </Grid>
+                    <Grid item xs>
+                        jjjd
+                    </Grid>
+                </Grid>
+            </Container>
+      </React.Fragment>
   );
 }
 
