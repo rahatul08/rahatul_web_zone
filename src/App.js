@@ -1,22 +1,23 @@
 import './App.css';
-import React from "react";
-import { Container  } from "@material-ui/core";
-import Grid from "@material-ui/core/Grid";
 
-
-
+import { Browser as Routers , Router} from ''
 function App() {
   return (
     <Container >
-        <Grid item xs={12} sm={12} md={4} lg={3}>
-            hello
+        <Grid container>
+            <Grid item xs={12} sm={12} md={4} lg={3} style={{background : 'red'}}>
+               <Profile/>
+            </Grid>
+            <Grid item xs>
+                <Header>
+                    
+                </Header>
+            </Grid>
         </Grid>
-        <Grid item xs>
-            world
-        </Grid>
-
     </Container>
   );
 }
+
+
 
 export default App;
